@@ -35,4 +35,11 @@ print('The largest prime factor of the number 600,851,475,143 is', numMax)
 
 # Problem 4: Create a histogram of a normal distribution
     # Use a random number generator, numpy, and matplotlib
+import numpy as np
+import matplotlib.pyplot as plt
 
+ranNumGen = np.random.default_rng()
+vals = ranNumGen.normal(size = 1000)
+
+plt.hist(vals)
+plt.show()
