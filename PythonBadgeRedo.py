@@ -43,3 +43,11 @@ vals = ranNumGen.normal(size = 1000)
 
 plt.hist(vals)
 plt.show()
+
+# For fun: try creating a data frame
+import pandas as pd
+
+data = {"Calories (in g)" : [300, 450, 600], "Protein (in g)" : [30, 45, 60]}
+
+dataFrame = pd.DataFrame(data)
+print(dataFrame)
